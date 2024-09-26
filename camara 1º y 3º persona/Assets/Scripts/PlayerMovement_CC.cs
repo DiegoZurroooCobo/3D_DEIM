@@ -48,7 +48,9 @@ public class PlayerMovement_CC : MonoBehaviour
         movementVector.y = yVelocity;
 
         movementVector *= Time.deltaTime; // se mueve igual si importar el framerate
-        characterController.Move(movementVector); // metodo de character controller para moverlo
+
+        if(x != 0 || z != 0) //codigo espaguetti feo, borrar mas tarde 
+            characterController.Move(movementVector); // metodo de character controller para moverlo
     }
 
     void Rotation(float mouseX) 
