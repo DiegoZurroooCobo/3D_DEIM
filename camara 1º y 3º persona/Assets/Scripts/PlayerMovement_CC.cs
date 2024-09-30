@@ -49,7 +49,7 @@ public class PlayerMovement_CC : MonoBehaviour
 
         movementVector *= Time.deltaTime; // se mueve igual si importar el framerate
 
-        if(x != 0 || z != 0) //codigo espaguetti feo, borrar mas tarde 
+        //if(x != 0 || z != 0) //codigo espaguetti feo, borrar mas tarde 
             characterController.Move(movementVector); // metodo de character controller para moverlo
     }
 
